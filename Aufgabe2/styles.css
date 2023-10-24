@@ -153,3 +153,8 @@ label {
   cursor: pointer;
   font-family: sans-serif; /* Set the font-family to sans-serif */
 }
+#timeInput,
+#clearButton,
+#startButton {
+  border-radius: 5px;
+}
