@@ -114,3 +114,34 @@
 .car-moving {
   animation: carMove 5s ease-in-out forwards;
 }
+/* Styling for the "Auto fahren lassen" button */
+#startButton {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-family: sans-serif; /* Set the font-family to sans-serif */
+}
+
+/* Styling for the label and input */
+label {
+  font-weight: bold;
+  font-family: sans-serif; /* Set the font-family to sans-serif */
+}
+
+#timeInput {
+  width: 50px;
+  padding: 5px;
+  font-family: sans-serif; /* Set the font-family to sans-serif */
+}
+
+/* Styling for the "Seite auflösen" button */
+#clearButton {
+  background-color: #dc3545;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+  font-family: sans-serif; /* Set the font-family to sans-serif */
+}
