@@ -26,6 +26,9 @@
   top: -40px;
   left: 40px;
   border-radius: 20px 20px 0 0;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
 }
 
 /* Wheels */
@@ -76,6 +79,11 @@
   position: absolute;
   top: 40%;
   right: -5px;
+}
+.car,
+.headlight,
+.taillight {
+  border: 2px solid black; /* This line adds a black stroke */
 }
 /* Road */
 .road {
