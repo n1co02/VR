@@ -9,10 +9,18 @@ document.addEventListener("DOMContentLoaded", function () {
     }, 10); // 10ms is just a short delay to ensure the browser has time to reflow
   });
 
-  document.getElementById("clearButton").addEventListener("click", function () {
+  /*document.getElementById("clearButton").addEventListener("click", function () {
     const timeInSeconds = parseInt(document.getElementById("timeInput").value);
     document.body.style.transitionDuration = `${timeInSeconds}s`;
     document.body.classList.add("hidden");
+    setTimeout(() => {
+      document.body.innerHTML = "";
+    }, timeInSeconds * 1000);
+  });*/
+  document.getElementById("clearButton").addEventListener("click", function () {
+    const timeInSeconds = parseInt(document.getElementById("timeInput").value);
+    document.body.style.transition = `opacity ${timeInSeconds}s`;
+    document.body.style.opacity = 0;
     setTimeout(() => {
       document.body.innerHTML = "";
     }, timeInSeconds * 1000);
